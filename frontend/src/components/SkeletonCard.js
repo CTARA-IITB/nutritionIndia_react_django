@@ -1,4 +1,5 @@
 import React from "react";
+import "./SkeletonCard.css";
 import Skeleton from "react-loading-skeleton";
 import {Row } from 'react-bootstrap';
 const SkeletonDropdown = () => {
@@ -6,37 +7,40 @@ const SkeletonDropdown = () => {
     return (
       <section>
         <Row>
-        <h2 className="section-title" >
-          <Skeleton duration={.15} height={20} width={250} />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 className="section-title" >
+          <Skeleton duration={.15} height={20} width={300} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </h2>
         <hr/>
         <h2 className="section-title">
-          <Skeleton duration={.15} height={20} width={250} />
+          <Skeleton duration={.15} height={20} width={300} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </h2>
         <hr/>
         <h2 className="section-title">
-          <Skeleton duration={.15} height={20} width={250} />
+          <Skeleton duration={.15} height={20} width={300} />
         </h2>
         <hr/>
-        <h2 className="section-title">
-          <Skeleton duration={.15} height={20} width={250} />
-        </h2>
-        </Row>
+         </Row>
+         <Row>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Skeleton rectangle={true} height={400} width={600} />
+        &nbsp;<Skeleton rectangle={true} height={400} width={600} /> 
+        {/* &nbsp;&nbsp;<Skeleton rectangle={true} height={100} width={100} /> */}
+        </Row>   
         <Row>
-        <h2 className="section-title">
-          <Skeleton duration={.15} height={20} width={250} />
-        </h2>
-        </Row>
-      </section>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Skeleton rectangle={true} height={400} width={600} />
+        &nbsp;<Skeleton rectangle={true} height={400} width={600} /> 
+        {/* &nbsp;&nbsp;<Skeleton rectangle={true} height={100} width={100} /> */}
+        </Row>   
+       </section>
     );
   };
   const SkeletonMapCard = () => {
 
     return (
       <section>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Skeleton rectangle={true} height={500} width={450} /> 
-                &nbsp;&nbsp;<Skeleton rectangle={true} height={150} width={140} />
-                
+        <Row>
+        <Skeleton rectangle={true} height={300} width={250} /> 
+        &nbsp;&nbsp;<Skeleton rectangle={true} height={100} width={100} />
+        </Row>   
       </section>
     );
   };

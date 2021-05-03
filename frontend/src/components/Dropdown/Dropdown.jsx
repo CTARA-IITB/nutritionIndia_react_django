@@ -390,7 +390,7 @@ export const Dropdown = ({}) =>{
           setIsSelected(true);
         }
         if (!boundaries || !boundaries.state  || !boundaries.new_state) {
-          return <div><SkeletonDropdown /><Row><SkeletonCard /><SkeletonMapCard /> </Row> </div>
+          return <div><Row><SkeletonCard /><SkeletonMapCard /> </Row> </div>
         }
       
       //  const makeitFull = ()=> {
@@ -529,8 +529,8 @@ export const Dropdown = ({}) =>{
 
 <div class="layout" id="layoutid">
    <div class="layout_left">
-     <div class="layout_left_map">
-           <button className="button_fullscreen_trend"><img src={arrow_fullscreen} alt="image" onClick={screen1.enter} /></button>
+    <div class="layout_left_map">
+      <button className="button_fullscreen_trend"><img src={arrow_fullscreen} alt="image" onClick={screen1.enter} /></button>
       <FullScreen  className="fullscreen_css" handle={screen1} onChange={checkchange}>
         {isSelected? <Map boundaries={boundaries} 
           selIndiaData={selIndiaData} 
